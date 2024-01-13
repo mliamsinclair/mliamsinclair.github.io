@@ -1,7 +1,21 @@
+.App {
+  height: auto;
+  width: 100vw;
+}
+
+.Home {
+  height: 100vh;
+  width: 50vw;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  padding-left: 8vw;
+}
+
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
@@ -39,4 +53,42 @@
 
 .read-the-docs {
   color: #888;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.Navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: 10px 0;
+  background-color: #333;
+  color: #fff;
+  box-sizing: border-box;
+  box-shadow: 0 6px 4px rgba(0, 0, 0, 0.1);
+  margin: 0;
+}
+
+.Navbar a {
+  color: #fff; /* Change the color of the links */
+  text-decoration: none; /* Remove the underline from the links */
+  margin: 0 10px; /* Add some margin to the left and right of the links */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.highlight {
+  color: #61dafb;
+}
+
+.content {
+  margin-left: 20px;
+  margin-right: 20px;
 }
