@@ -4,6 +4,7 @@ import { loadFull } from "tsparticles";
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import Skill from "./Skill.jsx";
+import pythonIcon from "./assets/skill-icons/python.svg";
 import "./App.css";
 import "./Skill.css";
 
@@ -17,7 +18,7 @@ function App() {
         <div className="skills">
           <Skill
             skillName="PYTHON"
-            imageUrl="src\assets\skill-icons\python.svg"
+            imageUrl={pythonIcon}
           />
           <Skill skillName="JAVA" imageUrl="src\assets\skill-icons\java.svg" />
           <Skill
