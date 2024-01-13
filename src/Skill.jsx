@@ -5,7 +5,7 @@ class Skill extends React.Component {
   render() {
     return (
       <div className="skill-card">
-        <img src={this.props.imageUrl} alt={this.props.skillName} />
+        <img src={this.props.imageUrl} alt={this.props.skillName} className="svg-icon"/>
         <h2>{this.props.skillName}</h2>
       </div>
     );
