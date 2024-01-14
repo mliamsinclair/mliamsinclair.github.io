@@ -52,7 +52,6 @@ html {
   position: sticky;
   top: 0;
   left: 0;
-  width: 100vw;
   padding: 10px 0;
   background-color: #333;
   color: #fff;
@@ -75,7 +74,7 @@ body {
 }
 
 .highlight {
-  color: #61dafb;
+  color: #61c0fb;
 }
 
 .Home {
@@ -85,11 +84,75 @@ body {
   height: 100vh;
   text-align: center;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
+.Home h1 {
+  font-size: 3em;
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  text-align: center;
+}
+
+.About {
+  position: relative;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+.About p {
+  margin: 0 0 20px 0;
+  padding: 0;
+  text-align: justify;
+  min-width: 400px;
+}
+
+.About::before {
+  content: "";
+  display: block;
+  height: 44px; /* Adjust this to match the height of your navbar */
+  margin: -44px 0 0; /* This should be the negative value of the height */
+  visibility: hidden;
+}
+
+.Projects {
+  position: relative;
+}
+
+.Projects::before {
+  content: "";
+  display: block;
+  height: 44px; /* Adjust this to match the height of your navbar */
+  margin: -44px 0 0; /* This should be the negative value of the height */
+  visibility: hidden;
+}
+
+.Skills {
+  position: relative;
+}
+
+.Skills::before {
+  content: "";
+  display: block;
+  height: 44px; /* Adjust this to match the height of your navbar */
+  margin: -44px 0 0; /* This should be the negative value of the height */
+  visibility: hidden;
+}
+
+.Contact {
+  position: relative;
+}
+
+.Contact::before {
+  content: "";
+  display: block;
+  height: 44px; /* Adjust this to match the height of your navbar */
+  margin: -44px 0 0; /* This should be the negative value of the height */
+  visibility: hidden;
+}
 
 #tsparticles {
   width: 100%;

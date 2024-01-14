@@ -6,10 +6,28 @@
     text-align: center;
     padding: 20px;
     border-radius: 10px;
-    max-width: 100px;
+    width: 85px;
+    height: 85px;
     max-height: 100px;
     margin: 10px;
-    border: 2px solid #646cff;
+    /*border: 2px solid #646cff;*/
+    background: linear-gradient(45deg, rgb(212, 0, 255), rgb(53, 53, 214)); /* Replace with your gradient */
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin: auto;
+}
+
+.skill-card::before {
+  content: "";
+  position: absolute;
+  top: 2px; /* Adjust as needed */
+  right: 2px; /* Adjust as needed */
+  bottom: 2px; /* Adjust as needed */
+  left: 2px; /* Adjust as needed */
+  background-color: #1a1a1a;
+  z-index: -1;
+  border-radius: 10px;
 }
 
 .svg-icon {
@@ -21,18 +39,26 @@
 }
 
 .skill-card h2 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     margin: 0;
+    margin-bottom: 5px;
+}
+
+.about-skills-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 100px;
+}
+
+@media (min-width: 768px) { /* Adjust this value as needed */
+  .about-skills-container {
+    grid-template-columns: 2fr 1fr;
+  }
 }
 
 .skills {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
-    max-width: 500px;
-    min-width: 70vw;
-    margin-left: auto;
-    margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 8px;
 }

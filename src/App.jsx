@@ -5,88 +5,63 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 import Skill from "./Skill.jsx";
 import pythonIcon from "./assets/skill-icons/python.svg";
+import javaIcon from "./assets/skill-icons/java.svg";
+import cPlusPlusIcon from "./assets/skill-icons/c-plusplus.svg";
+import javascriptIcon from "./assets/skill-icons/javascript.svg";
+import sqlIcon from "./assets/skill-icons/sql.svg";
+import htmlIcon from "./assets/skill-icons/file-type-html.svg";
+import reactIcon from "./assets/skill-icons/react.svg";
+import mysqlIcon from "./assets/skill-icons/mysql.svg";
+import mongodbIcon from "./assets/skill-icons/mongodb.svg";
+import springIcon from "./assets/skill-icons/spring-boot.svg";
+import awsIcon from "./assets/skill-icons/aws.svg";
+import restApiIcon from "./assets/skill-icons/api.svg";
+import aiIcon from "./assets/skill-icons/openai.svg";
+import gitIcon from "./assets/skill-icons/github.svg";
 import "./App.css";
 import "./Skill.css";
+import ContactForm from "./ContactForm";
+import "./Footer.css";
+import "./ContactForm.css";
 
 function App() {
   return (
     <div className="App">
       <Home id="home" title="Home" />
       <div className="content">
-      <Navbar />
-        <About id="about" title="About" />
-        <div className="skills">
-          <Skill
-            skillName="PYTHON"
-            imageUrl={pythonIcon}
-          />
-          <Skill skillName="JAVA" imageUrl="src\assets\skill-icons\java.svg" />
-          <Skill
-            skillName="C++"
-            imageUrl="src\assets\skill-icons\c-plusplus.svg"
-          />
-          <Skill
-            skillName="JAVASCRIPT"
-            imageUrl="src\assets\skill-icons\javascript.svg"
-          />
-          <Skill skillName="SQL" imageUrl="src\assets\skill-icons\sql.svg" />
-          <Skill
-            skillName="HTML"
-            imageUrl="src\assets\skill-icons\file-type-html.svg"
-          />
-          <Skill
-            skillName="REACT"
-            imageUrl="src\assets\skill-icons\react.svg"
-          />
-          <Skill
-            skillName="MYSQL"
-            imageUrl="src\assets\skill-icons\mysql.svg"
-          />
-          <Skill
-            skillName="MONGODB"
-            imageUrl="src\assets\skill-icons\mongodb.svg"
-          />
-          <Skill
-            skillName="SPRING"
-            imageUrl="src\assets\skill-icons\spring-boot.svg"
-          />
-          <Skill skillName="AWS" imageUrl="src\assets\skill-icons\aws.svg" />
-          <Skill
-            skillName="REST API"
-            imageUrl="src\assets\skill-icons\api.svg"
-          />
-          <Skill skillName="AI" imageUrl="src\assets\skill-icons\openai.svg" />
-          <Skill skillName="GIT" imageUrl="src\assets\skill-icons\github.svg" />
+        <Navbar />
+        <h1 className="title">Liam Sinclair</h1>
+        <div className="about-skills-container">
+          <About id="about" title="About" />
+          <div className="skills">
+            <div className="skills-col">
+              <Skill skillName="PYTHON" imageUrl={pythonIcon} />
+              <Skill skillName="JAVA" imageUrl={javaIcon} />
+              <Skill skillName="C++" imageUrl={cPlusPlusIcon} />
+            </div>
+            <div className="skills-col">
+              <Skill skillName="JAVASCRIPT" imageUrl={javascriptIcon} />
+              <Skill skillName="SQL" imageUrl={sqlIcon} />
+              <Skill skillName="HTML" imageUrl={htmlIcon} />
+              <Skill skillName="REACT" imageUrl={reactIcon} />
+            </div>
+            <div className="skills-col">
+              <Skill skillName="MYSQL" imageUrl={mysqlIcon} />
+              <Skill skillName="MONGODB" imageUrl={mongodbIcon} />
+              <Skill skillName="SPRING" imageUrl={springIcon} />
+              <Skill skillName="AWS" imageUrl={awsIcon} />
+            </div>
+            <div className="skills-col">
+              <Skill skillName="REST API" imageUrl={restApiIcon} />
+              <Skill skillName="AI" imageUrl={aiIcon} />
+              <Skill skillName="GIT" imageUrl={gitIcon} />
+            </div>
+          </div>
         </div>
         <Projects id="projects" title="Projects" />
-        <div className="project-cards">
-          <ProjectCard
-            projectName="My Awesome Project"
-            description="This is a brief description of my awesome project."
-            imageUrl="https://example.com/project-image.jpg"
-            projectLink="https://example.com/project-site"
-          />
-          <ProjectCard
-            projectName="My Awesome Project"
-            description="This is a brief description of my awesome project."
-            imageUrl="https://example.com/project-image.jpg"
-            projectLink="https://example.com/project-site"
-          />
-          <ProjectCard
-            projectName="My Awesome Project"
-            description="This is a brief description of my awesome project."
-            imageUrl="https://example.com/project-image.jpg"
-            projectLink="https://example.com/project-site"
-          />
-          <ProjectCard
-            projectName="My Awesome Project"
-            description="This is a brief description of my awesome project."
-            imageUrl="https://example.com/project-image.jpg"
-            projectLink="https://example.com/project-site"
-          />
-        </div>
         <Skills id="skills" title="Skills" />
         <Contact id="contact" title="Contact" />
+        <Footer id="footer" title="Footer" />
       </div>
     </div>
   );
@@ -105,13 +80,13 @@ function Navbar() {
 }
 
 function Home({ id, title }) {
-    const particlesInit = useCallback(async (engine) => {
-      await loadFull(engine);
-    }, []);
+  const particlesInit = useCallback(async (engine) => {
+    await loadFull(engine);
+  }, []);
 
-    const particlesLoaded = useCallback(async (container) => {
-      await console.log(container);
-    }, []);
+  const particlesLoaded = useCallback(async (container) => {
+    await console.log(container);
+  }, []);
 
   return (
     <div className="Home" id={id}>
@@ -343,13 +318,14 @@ function Home({ id, title }) {
           themes: [],
         }}
       />
-      <h1>{"Hi,"}</h1>
-      <h1>{"I'm Liam."}</h1>
+      <h1>{"Hi, I'm Liam"}</h1>
       <p>
-        My name is <span className="highlight">Liam</span> and I'm a{" "}
-        <span className="highlight">software engineer</span> based in{" "}
+        I'm a <span className="highlight">software engineer</span> based in{" "}
         <span className="highlight">Greenville, South Carolina</span>.
       </p>
+      <a href="#about">
+        <button>Learn more</button>
+      </a>
     </div>
   );
 }
@@ -357,14 +333,20 @@ function Home({ id, title }) {
 function About({ id, title }) {
   return (
     <div className="About" id={id}>
-      <h1>{title}</h1>
       <p>
-        I'm a software engineer with a background in{" "}
-        <span className="highlight">data science</span> and{" "}
-        <span className="highlight">machine learning</span>. I'm passionate
-        about building <span className="highlight">beautiful</span>,{" "}
-        <span className="highlight">intuitive</span>, and{" "}
-        <span className="highlight">accessible</span> applications.
+        I'm a versatile software engineer with a passion for learning and
+        genuine love for development. I'm currently a senior at
+        <span className="highlight"> USC Upstate</span> pursuing a
+        <span className="highlight"> B.S.</span> with a dual major in
+        <span className="highlight"> Computer Science</span> and
+        <span className="highlight"> Cybersecurity</span>. The perfect blend of
+        creativity, logical thinking, and perpetual discovery is what fuels my
+        passion and excitement for innovative software development. I strongly
+        enjoy working with teams, and I'm always searching for new opportunities
+        to expand my knowledge and skillset. I'm currently seeking an
+        <span className="highlight"> internship</span> for Spring 2024 or
+        <span className="highlight"> full-time employment</span> for following
+        my graduation in April 2024.
       </p>
     </div>
   );
@@ -375,6 +357,36 @@ function Projects({ id, title }) {
     <div className="Projects" id={id}>
       <h1>{title}</h1>
       <p>Here are some of the projects I've worked on.</p>
+      <ProjectCard
+        projectName="PumpPals"
+        imageUrl="https://picsum.photos/200/300"
+        description="Fitness social media application that allows users to share their workouts and progress with friends. Built with React, Spring Boot, and MongoDB."
+        projectLink="https://google.com"
+      />
+      <ProjectCard
+        projectName="Skybin"
+        imageUrl="https://picsum.photos/200/300"
+        description="A cloud storage application that allows users to upload and download files, as well as manage their own personal directory. Built with React, Spring Boot, and MySQL."
+        projectLink="https://google.com"
+      />
+      <ProjectCard
+        projectName="Object Detection Robot"
+        imageUrl="https://picsum.photos/200/300"
+        description="A robotic arm that can detect and pick up colored balls as well as move freely via controller input. Built with Arduino IDE, C++, and Python."
+        projectLink="https://google.com"
+      />
+      <ProjectCard
+        projectName="Distributed and Network Programming"
+        imageUrl="https://picsum.photos/200/300"
+        description="A directory of various projects that demonstrate my knowledge of distributed and network programming. Built with Java and Swing."
+        projectLink="https://google.com"
+      />
+      <ProjectCard
+        projectName="Portfolio Page"
+        imageUrl="https://picsum.photos/200/300"
+        description="This website! Built with React and CSS."
+        projectLink="https://google.com"
+      />
     </div>
   );
 }
@@ -393,6 +405,16 @@ function Contact({ id, title }) {
     <div className="Contact" id={id}>
       <h1>{title}</h1>
       <p>Feel free to reach out to me at </p>
+      <ContactForm />
+    </div>
+  );
+}
+
+function Footer({ id, title }) {
+  return (
+    <div className="Footer" id={id}>
+      <a href="#home">Home</a>
+      <p>Liam Sinclair</p>
     </div>
   );
 }
