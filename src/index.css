@@ -66,3 +66,7 @@ button:focus-visible {
   }
 }
 
+h1 {
+  display: inline-block; /* Prevents the underline from being too wide */
+  border-bottom:#646cff 4px solid;
+}

@@ -1,0 +1,21 @@
+.About {
+  position: relative;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+.About p {
+  margin: 0 0 20px 0;
+  padding: 0;
+  text-align: justify;
+  min-width: 400px;
+  max-width: 800px;
+}
+
+.About::before {
+  content: "";
+  display: block;
+  height: 44px; /* Adjust this to match the height of your navbar */
+  margin: -44px 0 0; /* This should be the negative value of the height */
+  visibility: hidden;
+}

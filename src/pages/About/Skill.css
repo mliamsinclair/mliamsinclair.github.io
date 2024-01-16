@@ -1,0 +1,100 @@
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    max-height: 100px;
+    margin: 10px;
+    background: linear-gradient(45deg, rgb(212, 0, 255), rgb(53, 53, 214)); /* Replace with your gradient */
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin-top: 20px;
+    max-width: 60px;
+    max-height: 60px;
+}
+
+.skill-card::before {
+  content: "";
+  position: absolute;
+  top: 2px; /* Adjust as needed */
+  right: 2px; /* Adjust as needed */
+  bottom: 2px; /* Adjust as needed */
+  left: 2px; /* Adjust as needed */
+  background-color: #1a1a1a;
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.skill-card:hover {
+  background: linear-gradient(45deg, rgb(216, 163, 225), rgb(131, 153, 227));
+}
+
+.svg-icon {
+    object-fit: contain;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.skill-card h2 {
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.about-skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-icon-title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-icon {
+  position: absolute;
+  z-index: -1;
+  height: 80%;
+  transform: translateX(-80px);
+}
+
+/*@media (min-width: 1100px) { /* Adjust this value as needed
+  .about-skills-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+} */
+
+.skills {
+  display: flex;
+  flex-direction: row;
+}
+
+/*.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.background-block {
+  background: linear-gradient(45deg, rgb(149, 0, 255), rgb(53, 53, 214));
+  height: 4px; /* Adjust this as needed 
+  width: 100%;
+}
+
+.about-section p {
+  position: relative;
+  margin-bottom: 20px;
+} */

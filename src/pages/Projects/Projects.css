@@ -1,0 +1,11 @@
+.Projects {
+  position: relative;
+}
+
+.Projects::before {
+  content: "";
+  display: block;
+  height: 44px; /* Adjust this to match the height of your navbar */
+  margin: -44px 0 0; /* This should be the negative value of the height */
+  visibility: hidden;
+}
