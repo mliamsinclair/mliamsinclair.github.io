@@ -82,7 +82,7 @@ function Footer({ id, title }) {
         <a href="https://github.com/mliamsinclair" target="_blank">
           <img src={githubLink} alt="github" />
         </a>
-        <a href="mailto:your-email@example.com" target="_blank">
+        <a href="mailto:m.liam.sinclair@gmail.com" target="_blank">
           <img src={contactIcon} alt="email" />
         </a>
       </div>

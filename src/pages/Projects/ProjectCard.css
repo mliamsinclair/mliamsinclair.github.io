@@ -6,7 +6,7 @@
 
 
 .project-card img {
-    width: 60vw;
+    width: 80vw;
     max-width: 500px;
     border-radius: 8px;
     border: 8px solid rgba(76, 0, 255, 0.375);
@@ -25,7 +25,7 @@
 }
 
 .project-card h3 {
-    font-size: clamp(1rem, 3vw, 1.7rem);
+    font-size: clamp(1.5rem, 3vw, 2rem);
     margin: 10px;
     text-align: center;
     padding-left: 20px;
@@ -71,10 +71,26 @@
 
 .project-info {
     background-color: rgba(0, 0, 0, 0.375);
-    max-width: 30%;
+    max-width: 400px;
+    width: 90%;
     margin-right: -40px;
     margin-left: -40px;
     padding: 20px;
     z-index: 1;
     border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 700px) {
+    .project-card:nth-child(odd){
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .project-card:nth-child(even){
+        flex-direction: column;
+        text-align: center;
+    }
 }
