@@ -5,10 +5,14 @@ class ProjectCard extends React.Component {
   render() {
     return (
       <div className="project-card">
-        <h2>{this.props.projectName}</h2>
-        <img src={this.props.imageUrl} alt={this.props.projectName} />
-        <p>{this.props.description}</p>
-        <a href={this.props.projectLink}>Visit Project</a>
+        <div className="project-info">
+          <h3>{this.props.projectName}</h3>
+          <p>{this.props.description}</p>
+          <a href={this.props.projectLink}>Visit Project</a>
+        </div>
+        <div>
+          <img src={this.props.imageUrl} alt={this.props.projectName} />
+        </div>
       </div>
     );
   }

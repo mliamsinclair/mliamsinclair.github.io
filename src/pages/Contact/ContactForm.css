@@ -17,20 +17,37 @@
 
 .contact-form input,
 .contact-form textarea {
-    margin-bottom: 10px;
+    margin-bottom: 14px;
     padding: 5px;
-    width: 300px;
+    width: 75vw;
+    border: 1px solid #24292e;
+    border-radius: 7px;
+    font-size: 18px;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    max-width: 500px;
+}
+
+.contact-form textarea {
+    height: 200px;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+    border: 2px solid #5953c8;
 }
 
 .contact-form button {
     padding: 10px 20px;
-    background-color: #24292e;
+    background-color: #5655af7b;
     color: white;
     border: none;
     cursor: pointer;
     margin-bottom: 10px;
+    font-size: 16px;
+    width: 100px;
+    align-self: flex-end;
 }
 
 .contact-form button:hover {
-    border: 1px solid #ffffff;
+    background-color: #5642b9;
 }

@@ -1,5 +1,6 @@
 .Contact {
   position: relative;
+  margin-top: 20vh;
 }
 
 .Contact::before {
@@ -8,4 +9,19 @@
   height: 44px; /* Adjust this to match the height of your navbar */
   margin: -44px 0 0; /* This should be the negative value of the height */
   visibility: hidden;
+}
+
+.contact-icon-title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contact-icon {
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  transform: translateX(-100px);
 }

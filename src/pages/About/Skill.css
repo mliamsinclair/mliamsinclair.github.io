@@ -6,15 +6,18 @@
     text-align: center;
     padding: 20px;
     border-radius: 10px;
-    max-height: 100px;
     margin: 10px;
     background: linear-gradient(45deg, rgb(212, 0, 255), rgb(53, 53, 214)); /* Replace with your gradient */
     position: relative;
     overflow: hidden;
     z-index: 1;
     margin-top: 20px;
-    max-width: 60px;
-    max-height: 60px;
+    width: 60px;
+    height: 60px;
+}
+
+.skill-card h2 {
+  border-bottom: none;
 }
 
 .skill-card::before {
@@ -55,20 +58,6 @@
   justify-content: center;
 }
 
-.page-icon-title {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.page-icon {
-  position: absolute;
-  z-index: -1;
-  height: 80%;
-  transform: translateX(-80px);
-}
-
 /*@media (min-width: 1100px) { /* Adjust this value as needed
   .about-skills-container {
     flex-direction: row;
@@ -79,6 +68,10 @@
 .skills {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80vw;
+  max-width: 600px;
 }
 
 /*.about-section {

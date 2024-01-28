@@ -74,7 +74,7 @@ function ContactForm() {
           placeholder="Content"
           required
         />
-        <button type="submit">Send</button>
+        <button type="submit">SUBMIT</button>
       </form>
     </div>
   );

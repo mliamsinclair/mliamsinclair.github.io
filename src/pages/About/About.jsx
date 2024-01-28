@@ -5,8 +5,8 @@ import "./About.css";
 function About({ id, title }) {
   return (
     <div className="About" id={id}>
-      <div className="page-icon-title">
-        <img src={aboutIcon} alt="About Icon" className="page-icon" />
+      <div className="about-icon-title">
+        <img src={aboutIcon} alt="About Icon" className="about-icon" />
         <h1>{title}</h1>
       </div>
       <div className="about-section">

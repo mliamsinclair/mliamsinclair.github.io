@@ -1,62 +1,80 @@
 .project-card {
-    display: flex;
-    flex-direction: column;
+    align-items: center;
     padding: 20px;
     border-radius: 5px;
-    background-color: #283063;
-    box-shadow: 0 8px 6px rgba(0, 0, 0, 0.1);
-    margin: 10px;
 }
 
-.project-card h2 {
-    margin-top: 0;
-}
 
 .project-card img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    margin-bottom: 10px;
+    width: 60vw;
+    max-width: 500px;
+    border-radius: 8px;
+    border: 8px solid rgba(76, 0, 255, 0.375);
+    border-left: 20px solid rgba(76, 0, 255, 0.375);
+    border-right: 20px solid rgba(76, 0, 255, 0.375);
 }
 
 .project-card p {
-    margin-bottom: 10px;
+    font-size: clamp(0.7rem, 2vw, 1rem);
+    margin: 10px;
+    border-top: 2px solid rgba(76, 0, 255, 0.375);
+    border-bottom: 2px solid rgba(76, 0, 255, 0.375);
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.project-card h3 {
+    font-size: clamp(1rem, 3vw, 1.7rem);
+    margin: 10px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .project-card a {
+    display: inline-block;
+    width: 100%;
     text-decoration: none;
-    color: #333;
-    background-color: #f0f0f0;
-    padding: 10px 20px;
+    color: white;
     border-radius: 5px;
+    text-align: center;
 }
 
 .project-card a:hover {
-    background-color: #e0e0e0;
+    text-emphasis-color: black;
 }
 
 .project-card:nth-child(odd){
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
-    align-items: left;
-    justify-content: left;
+    align-items: center;
+    justify-content: center;
     text-align: left;
-    margin-top: 20px;
-    margin-right: 10vw;
+    flex-direction: row-reverse;
 }
 
 .project-card:nth-child(even){
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
-    align-items: right;
-    justify-content: right;
+    align-items: center;
+    justify-content: center;
     text-align: right;
-    margin-top: 20px;
-    margin-left: 10vw;
-    align-content: right;
+    align-content: center;
+    flex-direction: row;
 }
 
 .project-cards {
     display: flex;
     flex-direction: column;
+}
+
+.project-info {
+    background-color: rgba(0, 0, 0, 0.375);
+    max-width: 30%;
+    margin-right: -40px;
+    margin-left: -40px;
+    padding: 20px;
+    z-index: 1;
+    border-radius: 8px;
 }

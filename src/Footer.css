@@ -1,10 +1,47 @@
 .Footer {
-    height: 25vh;
+    height: 300px;
     width: 100%;
     background-color: rgb(46, 46, 46);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 60px;
+    margin-top: 140px;
+    position: relative;
+}
+
+.Footer p {
+    color: rgba(255, 255, 255, 0.577);
+    font-size: clamp(0.7rem, 2vw, 1rem);
+    margin: 10px;
+    border-top: 2px solid rgba(255, 255, 255, 0.375);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.375);
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.Footer img {
+    width: 100px;
+    height: 55px;
+}
+
+.home-link {
+    background-color: rgb(91, 80, 207);
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    top: -40px;
+    position: absolute;
+}
+
+.img-link-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+    margin-bottom: 15px;
 }

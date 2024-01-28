@@ -1,5 +1,6 @@
 .Projects {
   position: relative;
+  margin-top: 20vh;
 }
 
 .Projects::before {
@@ -8,4 +9,18 @@
   height: 44px; /* Adjust this to match the height of your navbar */
   margin: -44px 0 0; /* This should be the negative value of the height */
   visibility: hidden;
+}
+
+.project-icon-title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-icon {
+  position: absolute;
+  z-index: -1;
+  height: 80%;
+  transform: translateX(-113px);
 }

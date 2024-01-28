@@ -6,11 +6,10 @@ import ContactForm from "./ContactForm.jsx";
 function Contact({ id, title }) {
   return (
     <div className="Contact" id={id}>
-      <div className="page-icon-title">
-        <img src={contactIcon} alt="About Icon" className="page-icon" />
+      <div className="contact-icon-title">
+        <img src={contactIcon} alt="About Icon" className="contact-icon" />
         <h1>{title}</h1>
       </div>
-      <p>Feel free to reach out to me at </p>
       <ContactForm />
     </div>
   );
