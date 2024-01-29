@@ -1,9 +1,10 @@
 .App {
   width: 100%;
-  display: flex; /* Add this */
-  justify-content: center; /* Add this */
-  align-items: center; /* Add this */
-  flex-direction: column; /* Add this */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.3s ease; /* Add this */
 }
 
 .container {

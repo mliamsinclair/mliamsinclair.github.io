@@ -37,6 +37,11 @@
     margin: 10px;
     top: -40px;
     position: absolute;
+    transition: all 0.3s ease;
+}
+
+.home-link:hover {
+    transform: translateY(-5px);
 }
 
 .img-link-container {

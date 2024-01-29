@@ -14,6 +14,7 @@
     margin-top: 20px;
     width: 60px;
     height: 60px;
+    transition: all 0.3s ease;
 }
 
 .skill-card h2 {
@@ -34,6 +35,7 @@
 
 .skill-card:hover {
   background: linear-gradient(45deg, rgb(216, 163, 225), rgb(131, 153, 227));
+  transform: translateY(-5px);
 }
 
 .svg-icon {

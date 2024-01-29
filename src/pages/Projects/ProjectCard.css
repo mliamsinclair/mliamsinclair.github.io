@@ -9,9 +9,12 @@
     width: 80vw;
     max-width: 500px;
     border-radius: 8px;
-    border: 8px solid rgba(76, 0, 255, 0.375);
-    border-left: 20px solid rgba(76, 0, 255, 0.375);
-    border-right: 20px solid rgba(76, 0, 255, 0.375);
+    border: 2px solid rgb(255, 255, 255);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card img:hover {
+    transform: translateY(-10px);
 }
 
 .project-card p {
