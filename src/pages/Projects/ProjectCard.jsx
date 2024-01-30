@@ -11,7 +11,9 @@ class ProjectCard extends React.Component {
           <a href={this.props.projectLink} target="_blank">Visit Project</a>
         </div>
         <div>
-          <img src={this.props.imageUrl} alt={this.props.projectName} />
+          <a href={this.props.projectLink} target="_blank">
+            <img src={this.props.imageUrl} alt={this.props.projectName} />
+          </a>
         </div>
       </div>
     );
