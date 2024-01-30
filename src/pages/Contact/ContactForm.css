@@ -20,11 +20,12 @@
     margin-bottom: 14px;
     padding: 5px;
     width: 75vw;
-    border: 1px solid #24292e;
+    border: 2px solid #24292e;
     border-radius: 7px;
     font-size: 18px;
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     max-width: 500px;
+    transition: all 0.2s ease;
 }
 
 .contact-form textarea {
@@ -37,17 +38,24 @@
 }
 
 .contact-form button {
-    padding: 10px 20px;
-    background-color: #5655af7b;
+    display: inline-block;
+    text-decoration: none;
     color: white;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-position 0.3s ease-in-out;
+    background: linear-gradient(to right, rgb(112, 112, 244) 50%, rgb(77, 77, 205) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    padding: 10px 20px;
     border: none;
     cursor: pointer;
     margin-bottom: 10px;
     font-size: 16px;
-    width: 100px;
     align-self: flex-end;
 }
 
 .contact-form button:hover {
+    background-position: left bottom;
     background-color: #5642b9;
 }

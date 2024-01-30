@@ -79,10 +79,10 @@ function Footer({ id, title }) {
         </a>
       </div>
       <div className="img-link-container">
-        <a href="https://github.com/mliamsinclair" target="_blank">
+        <a href="https://github.com/mliamsinclair" target="_blank" className="home-go-to">
           <img src={githubLink} alt="github" />
         </a>
-        <a href="mailto:m.liam.sinclair@gmail.com" target="_blank">
+        <a href="mailto:m.liam.sinclair@gmail.com" target="_blank" className="home-go-to">
           <img src={contactIcon} alt="email" />
         </a>
       </div>
