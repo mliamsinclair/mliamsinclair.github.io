@@ -3,6 +3,7 @@ import ProjectCard from "./ProjectCard.jsx";
 import "./Projects.css";
 import projectIcon from "./project-icon.svg";
 import testPic from "./test.png";
+import skybinPic from "./skybin.png";
 
 function Projects({ id, title }) {
   return (
@@ -19,9 +20,9 @@ function Projects({ id, title }) {
       />
       <ProjectCard
         projectName="Skybin"
-        imageUrl={testPic}
+        imageUrl={skybinPic}
         description="A cloud storage application that allows users to upload and download files, as well as manage their own personal directory. Built with React, Spring Boot, and MySQL."
-        projectLink="https://google.com"
+        projectLink="https://github.com/mliamsinclair/skybin"
       />
       <ProjectCard
         projectName="Object Detection Robot"
