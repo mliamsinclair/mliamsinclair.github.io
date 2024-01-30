@@ -246,7 +246,7 @@ function Home({ id, title }) {
       <h1>{"Hi, I'm Liam"}</h1>
       <p>
         I'm a <span className="highlight">software engineer</span> based in{" "}
-        <span className="highlight">Greenville, South Carolina</span>.
+        <span className="highlight">Greenville, South Carolina</span>
       </p>
       <a href="#about">
         <button>Learn more</button>

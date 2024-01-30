@@ -2,6 +2,7 @@
     align-items: center;
     padding: 20px;
     border-radius: 5px;
+    margin-top: 10px;
 }
 
 
@@ -11,6 +12,7 @@
     border-radius: 8px;
     border: 2px solid rgb(255, 255, 255);
     transition: transform 0.3s ease-in-out;
+    margin-bottom: 10px;
 }
 
 .project-card img:hover {
@@ -20,8 +22,8 @@
 .project-card p {
     font-size: clamp(0.7rem, 2vw, 1rem);
     margin: 10px;
-    border-top: 2px solid rgba(76, 0, 255, 0.375);
-    border-bottom: 2px solid rgba(76, 0, 255, 0.375);
+    border-top: 2px solid rgba(122, 65, 255);
+    border-bottom: 2px solid rgb(122, 65, 255);
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
@@ -42,10 +44,12 @@
     color: white;
     border-radius: 5px;
     text-align: center;
+    transition: 0.3s ease-in-out;
 }
 
 .project-card a:hover {
-    text-emphasis-color: black;
+    transform: scale(1.04);
+    color: rgb(200, 211, 255);
 }
 
 .project-card:nth-child(odd){
@@ -55,6 +59,7 @@
     justify-content: center;
     text-align: left;
     flex-direction: row-reverse;
+    animation: slideInFromLeft 1s ease-in-out;
 }
 
 .project-card:nth-child(even){
@@ -65,6 +70,7 @@
     text-align: right;
     align-content: center;
     flex-direction: row;
+    animation: slideInFromRight 1s ease-in-out;
 }
 
 .project-cards {
@@ -73,7 +79,7 @@
 }
 
 .project-info {
-    background-color: rgba(0, 0, 0, 0.375);
+    background-color: rgba(0, 0, 0, 0.785);
     max-width: 400px;
     width: 90%;
     margin-right: -40px;
@@ -86,14 +92,14 @@
 
 @media (max-width: 700px) {
     .project-card:nth-child(odd){
-        flex-direction: column;
+        flex-direction: column-reverse;
         text-align: center;
     }
 }
 
 @media (max-width: 700px) {
     .project-card:nth-child(even){
-        flex-direction: column;
+        flex-direction: column-reverse;
         text-align: center;
     }
 }

@@ -50,3 +50,11 @@
     margin-top: 70px;
     margin-bottom: 15px;
 }
+
+.home-go-to {
+    transition: all 0.3s ease;
+}
+
+.home-go-to:hover {
+    transform: translateY(-5px);
+}

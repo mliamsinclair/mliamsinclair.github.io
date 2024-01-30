@@ -36,9 +36,15 @@ function Projects({ id, title }) {
         projectLink="https://google.com"
       />
       <ProjectCard
+        projectName="Twitter Sentiment Analysis"
+        imageUrl={testPic}
+        description="My senior portfolio project. An analysis of the use of DistilBERT and a six-layer CNN to classify the sentiment of tweets. Built with Python, TensorFlow, and Keras. Currently in progress."
+        projectLink="https://google.com"
+      />
+      <ProjectCard
         projectName="Portfolio Page"
         imageUrl={testPic}
-        description="This website! Built with React and CSS."
+        description="This webpage! Built with React, JavaScript, and CSS. Hosted on GitHub Pages."
         projectLink="https://google.com"
       />
     </div>
