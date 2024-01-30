@@ -4,6 +4,7 @@ import "./Projects.css";
 import projectIcon from "./project-icon.svg";
 import testPic from "./test.png";
 import skybinPic from "./skybin.png";
+import pumppalsPic from "./pumppals.png";
 
 function Projects({ id, title }) {
   return (
@@ -14,9 +15,9 @@ function Projects({ id, title }) {
       </div>
       <ProjectCard
         projectName="PumpPals"
-        imageUrl={testPic}
+        imageUrl={pumppalsPic}
         description="Fitness social media application that allows users to share their workouts and progress with friends. Built with React, Spring Boot, and MongoDB."
-        projectLink="https://google.com"
+        projectLink="https://github.com/mliamsinclair/PumpPals"
       />
       <ProjectCard
         projectName="Skybin"
