@@ -38,7 +38,7 @@ function Projects({ id, title }) {
         projectName="Distributed and Network Programming"
         imageUrl={testPic}
         description="A directory of various projects that demonstrate my knowledge of distributed and network programming. Built with Java and Swing."
-        projectLink="https://google.com"
+        projectLink="https://github.com/mliamsinclair/Distributed-Network-Programming"
       />
       <ProjectCard
         projectName="Twitter Sentiment Analysis"
@@ -50,7 +50,7 @@ function Projects({ id, title }) {
         projectName="Portfolio Page"
         imageUrl={testPic}
         description="This webpage! Built with React, JavaScript, and CSS. Hosted on GitHub Pages."
-        projectLink="https://google.com"
+        projectLink="https://github.com/mliamsinclair/mliamsinclair.github.io"
       />
     </div>
   );
