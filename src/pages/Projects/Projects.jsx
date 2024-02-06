@@ -6,7 +6,12 @@ import testPic from "./test.png";
 import skybinPic from "./skybin.png";
 import armPic from "./arm.png";
 import pumppalsPic from "./pumppals.png";
-import armDoc from "./arm-doc.pdf";
+import armDoc from "./RoboticArmDocumentation.pdf";
+import pumppalsdoc from "./PumpPalsDocumentation.pdf";
+import skybindoc from "./SkybinDocumentation.pdf";
+import dnpic from "./dnpic.png";
+import tsapic from "./DALLETwitterSentimentAnalysis.webp";
+import portfoliopic from "./portfoliopic.png";
 
 function Projects({ id, title }) {
   return (
@@ -20,12 +25,14 @@ function Projects({ id, title }) {
         imageUrl={skybinPic}
         description="A cloud storage application that allows users to upload and download files, as well as manage their own personal directory. Built with React, Spring Boot, and MySQL."
         projectLink="https://github.com/mliamsinclair/skybin"
+        documentationLink={skybindoc}
       />
       <ProjectCard
         projectName="PumpPals"
         imageUrl={pumppalsPic}
         description="Fitness social media application that allows users to share their workouts and progress with friends. Built with React, Spring Boot, and MongoDB."
         projectLink="https://github.com/mliamsinclair/PumpPals"
+        documentationLink={pumppalsdoc}
       />
       <ProjectCard
         projectName="Object Detection Robot"
@@ -36,19 +43,19 @@ function Projects({ id, title }) {
       />
       <ProjectCard
         projectName="Distributed and Network Programming"
-        imageUrl={testPic}
+        imageUrl={dnpic}
         description="A directory of various projects that demonstrate my knowledge of distributed and network programming. Built with Java and Swing."
         projectLink="https://github.com/mliamsinclair/Distributed-Network-Programming"
       />
       <ProjectCard
         projectName="Twitter Sentiment Analysis"
-        imageUrl={testPic}
+        imageUrl={tsapic}
         description="My senior portfolio project. An analysis of the use of DistilBERT and a six-layer CNN to classify the sentiment of tweets. Built with Python, TensorFlow, and Keras. Currently in progress."
-        projectLink="https://google.com"
+        projectLink="https://github.com/mliamsinclair/Twitter-Sentiment-Analysis"
       />
       <ProjectCard
         projectName="Portfolio Page"
-        imageUrl={testPic}
+        imageUrl={portfoliopic}
         description="This webpage! Built with React, JavaScript, and CSS. Hosted on GitHub Pages."
         projectLink="https://github.com/mliamsinclair/mliamsinclair.github.io"
       />
