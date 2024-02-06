@@ -12,21 +12,21 @@ function About({ id, title }) {
       <div className="about-section">
         <div className="background-block"></div>
         <p>
-          I'm a versatile software engineer with a passion for learning and
-          genuine love for development. I'm currently a senior at
-          <span className="highlight"> USC Upstate</span> pursuing a
-          <span className="highlight"> B.S.</span> with a dual major in
-          <span className="highlight"> Computer Science</span> and
-          <span className="highlight"> Cybersecurity</span>. The perfect blend
-          of creativity, logical thinking, and perpetual discovery is what fuels
-          my passion and excitement for innovative software development. I
-          strongly enjoy working with teams, and I'm always searching for new
-          opportunities to expand my knowledge and skillset. I'm currently
-          seeking an
-          <span className="highlight"> internship</span> for Spring 2024 or
-          <span className="highlight"> full-time employment</span> for following
-          my graduation in April 2024.
+          I am a versatile software engineer with a passion for learning and a
+          genuine love for development. Currently, I am a senior at
+          <span className="highlight">USC Upstate</span>, pursuing a
+          <span className="highlight">B.S.</span> with a dual major in
+          <span className="highlight">Computer Science</span> and
+          <span className="highlight">Cybersecurity</span>. The perfect blend of
+          creativity, logical thinking, and perpetual discovery fuels my passion
+          and excitement for innovative software development. I greatly enjoy
+          working in teams and am constantly seeking new opportunities to expand
+          my knowledge and skillset. I am actively seeking an
+          <span className="highlight">internship</span> for Spring 2024 or
+          <span className="highlight">full-time employment</span> following my
+          graduation in April 2024.
         </p>
+
         <div className="background-block"></div>
       </div>
     </div>
