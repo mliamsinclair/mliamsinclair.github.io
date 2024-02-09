@@ -21,6 +21,8 @@ import gitIcon from "./assets/skill-icons/github.svg";
 import githubLink from "./assets/skill-icons/github-link.svg";
 import homeLink from "./assets/skill-icons/nav-arrow-up.svg";
 import contactIcon from "./assets/skill-icons/contact.svg";
+import linkedinIcon from "./assets/skill-icons/linkedin.svg";
+import resume from "./assets/Michael Liam Sinclair Resume.pdf";
 import "./App.css";
 import "./Footer.css";
 
@@ -66,6 +68,9 @@ function Navbar() {
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
+      <a href={resume} target="_blank" rel="noopener noreferrer">
+        Resume
+      </a>
     </nav>
   );
 }
@@ -79,11 +84,26 @@ function Footer({ id, title }) {
         </a>
       </div>
       <div className="img-link-container">
-        <a href="https://github.com/mliamsinclair" target="_blank" className="home-go-to">
+        <a
+          href="https://github.com/mliamsinclair"
+          target="_blank"
+          className="home-go-to"
+        >
           <img src={githubLink} alt="github" />
         </a>
-        <a href="mailto:m.liam.sinclair@gmail.com" target="_blank" className="home-go-to">
+        <a
+          href="mailto:m.liam.sinclair@gmail.com"
+          target="_blank"
+          className="home-go-to"
+        >
           <img src={contactIcon} alt="email" />
+        </a>
+        <a
+          href="https://https://www.linkedin.com/in/mliamsinclair/"
+          target="_blank"
+          className="home-go-to"
+        >
+          <img src={linkedinIcon} alt="linkedin" />
         </a>
       </div>
       <p>MICHAEL LIAM SINCLAIR</p>
