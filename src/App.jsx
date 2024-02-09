@@ -99,7 +99,7 @@ function Footer({ id, title }) {
           <img src={contactIcon} alt="email" />
         </a>
         <a
-          href="https://https://www.linkedin.com/in/mliamsinclair/"
+          href="https://www.linkedin.com/in/mliamsinclair/"
           target="_blank"
           className="home-go-to"
         >
