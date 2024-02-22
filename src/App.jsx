@@ -22,7 +22,7 @@ import githubLink from "./assets/skill-icons/github-link.svg";
 import homeLink from "./assets/skill-icons/nav-arrow-up.svg";
 import contactIcon from "./assets/skill-icons/contact.svg";
 import linkedinIcon from "./assets/skill-icons/linkedin.svg";
-import resume from "./assets/Michael Liam Sinclair Resume.pdf";
+import resume from "./assets/MichaelSinclairResume.pdf";
 import "./App.css";
 import "./Footer.css";
 
