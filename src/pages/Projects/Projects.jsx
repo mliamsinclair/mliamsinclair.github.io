@@ -12,6 +12,7 @@ import skybindoc from "./SkybinDocumentation.pdf";
 import dnpic from "./dnpic.png";
 import tsapic from "./DALLETwitterSentimentAnalysis.webp";
 import portfoliopic from "./portfoliopic.png";
+import nlpresearch from "./MSinclairNLPResearch.pdf";
 
 function Projects({ id, title }) {
   return (
@@ -20,6 +21,13 @@ function Projects({ id, title }) {
         <img src={projectIcon} alt="About Icon" className="project-icon" />
         <h1>{title}</h1>
       </div>
+      <ProjectCard
+        projectName="Twitter Sentiment Analysis"
+        imageUrl={tsapic}
+        description="My senior portfolio project. An analysis of the use of DistilBERT and a six-layer CNN to classify the sentiment of tweets. Built with Python, TensorFlow, and Transformers. Currently in progress."
+        projectLink="https://github.com/mliamsinclair/Twitter-Sentiment-Analysis"
+        documentationLink={nlpresearch}
+      />
       <ProjectCard
         projectName="Skybin"
         imageUrl={skybinPic}
@@ -46,12 +54,6 @@ function Projects({ id, title }) {
         imageUrl={dnpic}
         description="A directory of various projects that demonstrate my knowledge of distributed and network programming. Built with Java and Swing."
         projectLink="https://github.com/mliamsinclair/Distributed-Network-Programming"
-      />
-      <ProjectCard
-        projectName="Twitter Sentiment Analysis"
-        imageUrl={tsapic}
-        description="My senior portfolio project. An analysis of the use of DistilBERT and a six-layer CNN to classify the sentiment of tweets. Built with Python, TensorFlow, and Keras. Currently in progress."
-        projectLink="https://github.com/mliamsinclair/Twitter-Sentiment-Analysis"
       />
       <ProjectCard
         projectName="Portfolio Page"
